@@ -1,0 +1,1010 @@
+@font-face {
+  font-family: "tele2";
+  src: url(../fonts/Tele2SlabWeb-Bold.woff);
+}
+
+@font-face {
+	font-family: "tele2heavy";
+	src: url(../fonts/Tele2SlabWeb-Heavy.ttf);
+}
+
+@font-face {
+	font-family: "tele2regular";
+	src: url(../fonts/Tele2SlabWeb-Regular.ttf);
+}
+
+@font-face {
+	font-family: "tele2sans";
+	src: url(../fonts/OpenSans-Regular.woff2);
+}
+
+* {
+	box-sizing: border-box;
+}
+
+body {
+	margin: 0;
+}
+
+body > img:first-child {
+	position: fixed;
+	right: 0;
+	bottom: 0;
+}
+
+p {
+	margin: 0;
+}
+
+/*----------HEADER-------------*/
+header {
+	height: 9vh;
+	font-family: tele2sans;
+}
+
+header ul {
+	list-style-type: none;
+	display: flex;
+	justify-content: space-between;
+	background-color: #fff;
+	margin: 0 auto;
+	padding: 0.6em 0;
+	flex-wrap: wrap;
+}
+
+header li {
+	color: #000;
+	font-weight: 700;
+	padding: 0.6em 0;
+	/*font-family: 'Roboto', sans-serif;*/
+	/*font-family: 'Quicksand', sans-serif;*/
+	font-size: 0.7rem;
+	margin: 0 1em;
+}
+
+header li:first-child {
+	max-width: 5em;
+}
+
+header a {
+	text-decoration: none;
+	color: #000;
+}
+
+header a:hover {
+	color: #34495e;
+	border-bottom: 2px solid #005EB8;
+}
+
+header a img {
+	text-decoration: none;
+	border-bottom: none;
+}
+
+header a:active {
+	color: #005EB8;
+}
+
+header img {
+	cursor: pointer;
+}
+
+header ul li:first-child img {
+	width: 3.5rem;
+}
+
+.mobilehead {
+	display: none;
+}
+
+@media screen and (min-width: 48em /*768px*/) {
+	header ul {
+		width: 73.125rem;
+		margin-top: 2rem;
+		position: relative;
+		padding: 0 auto;
+		border-radius: 0.2em;
+	}
+
+	.mobilehead {
+		display: block;
+	}
+}
+
+.hamburgerUl {
+	/*opacity: 0;*/
+	/*height: 0;*/
+	display: none;
+}
+@media screen and (min-width: 48em /*768px*/) {
+	.hamburger {
+		display: none;
+	}
+}
+
+.hamburgerUlActive {
+	display: block;
+	position: absolute;
+	width: 100%;
+}
+
+/*-----------------------------*/
+
+/*----------BOVEN-------------*/
+a, button {
+	cursor: pointer;
+}
+
+@media screen and (min-width: 48em /*768px*/) {
+	main div:first-child section:first-child	 {
+		margin-top: -8rem;
+		padding-top: 10rem;
+		padding-bottom: 5rem;
+	}
+}
+
+main div:first-child section ul {
+	font-family: "tele2", sans-serif;
+	list-style-type: none;
+}
+
+/*ul:nth-child(2) li:before {
+  content: "\f005";
+    font-family: "Font Awesome 5 Free";
+    padding: 0 	0.625rem 0 0;
+}*/
+
+main div:first-child section h1 {
+	font-family: "tele2heavy", sans-serif;
+	margin-top: 0;
+	text-transform: uppercase;
+	font-size: 2.0625rem;
+	line-height: 1.75rem;
+}
+
+main div:first-child section:first-child h1 span {
+	color: #FEDD00;
+}
+
+main div:first-child section button:nth-child(3) {
+	background-color: #FEDD00;
+	border: none;
+	width: 12em;
+	color: #000;
+	padding: 1.25rem;
+	margin: 1.25rem 0.625rem;
+	border-radius: 0.3em;
+	display: flex;
+	border-bottom: 0.375rem solid #b19a00;
+	font-family: tele2;
+}
+
+main div:first-child section button:nth-child(3):hover {
+	background-color: #FFF000;
+	border-bottom: 0.3125rem solid #B19A00;
+	transition: 0.2s;
+}
+
+main div:first-child section button:nth-child(3):active {
+	background-color: #FEDD00;
+	border-bottom: 0.125rem solid #B19A00;
+	transition: 0.2s;
+}
+
+main div:first-child section p span {
+	text-decoration: underline;
+	font-family: tele2regular;
+}
+
+main div:first-child section span:nth-child(3):hover {
+	background-color: #009FDF;
+	border-bottom: 0.375rem solid #006F9C;	
+}
+
+/*-----------------------------*/
+
+main div:first-child section:nth-child(2) {
+	color: #fff;
+}
+
+main div section:nth-child(2) div button {
+	padding: 1.25rem;
+	margin: 1.25rem 0;
+	border: none;
+	color: white;
+	border-radius: 0.1875rem;
+	display: flex;
+	width: 100%;
+}
+
+main div section:nth-child(2) div button:first-child {
+	background-color: #009FDF;
+	border-bottom: 0.375rem solid #006F9C;
+}
+
+main div section:nth-child(2) div button:first-child:hover {
+	background-color: #00ADF2;
+	border-bottom: 0.3125rem solid #006F9C;
+	transition: 0.2s;
+}
+
+main div section:nth-child(2) div button:first-child:active {
+	background-color: #009FDF;
+	transition: 0.2s;
+}
+
+main div section:nth-child(2) div button:nth-child(2) {
+	background-color: #0066C8;
+	border-bottom: 0.375rem solid #004280;
+}
+
+main div section:nth-child(2) div button:nth-child(2):hover {
+	background-color: #005EB8;
+	border-bottom: 0.25rem solid #004280;
+	transition: 0.2s;
+}
+
+main div section:nth-child(2) div button:nth-child(2):active {
+	background-color: #0066C8;
+	border-bottom: 0.125rem solid #004280;
+	transition: 0.2s;
+}
+
+main div section:nth-child(2) div:nth-child(2) button:nth-child(1) {
+	background-color: #D40F7D;
+	border-bottom: 0.375rem solid #940A57;
+}
+
+main div section:nth-child(2) div:nth-child(2) button:nth-child(1):hover {
+	background-color: #E61088;
+	border-bottom: 0.25rem solid #940A57;
+	transition: 0.2s;
+}
+
+main div section:nth-child(2) div:nth-child(2) button:nth-child(1):active {
+	background-color: #D40F7D;
+	border-bottom: 0.125rem solid #940A57;
+	transition: 0.2s;
+}
+
+main div section:nth-child(2) div:nth-child(2) button:nth-child(2) {
+	background-color: #702082;
+	border-bottom: 0.375rem solid #4E165B;
+}
+
+main div section:nth-child(2) div:nth-child(2) button:nth-child(2):hover {
+	background-color: #7A238D;
+	border-bottom: 0.25rem solid #4E165B;
+	transition: 0.2s;
+}
+
+main div section:nth-child(2) div:nth-child(2) button:nth-child(2):active {
+	background-color: #702082;
+	border-bottom: 0.125rem solid #4E165B;
+	transition: 0.2s;
+}
+
+/* BUTTONS DESKTOP */
+
+#desktopButtons button {
+	padding: 1.25rem;
+	border: none;
+	color: white;
+	border-radius: 0.1875rem;
+	display: flex;
+	width: 100%;
+}
+
+#desktopButtons button:first-child {
+	background-color: #009FDF;
+	border-bottom: 0.375rem solid #006F9C;
+}
+
+#desktopButtons button:first-child:hover {
+	background-color: #00ADF2;
+	border-bottom: 0.3125rem solid #006F9C;
+	transition: 0.2s;
+}
+
+#desktopButtons button:first-child:active {
+	background-color: #009FDF;
+	transition: 0.2s;
+}
+
+#desktopButtons button:nth-child(2) {
+	background-color: #0066C8;
+	border-bottom: 0.375rem solid #004280;
+}
+
+#desktopButtons button:nth-child(2):hover {
+	background-color: #005EB8;
+	border-bottom: 0.25rem solid #004280;
+	transition: 0.2s;
+}
+
+#desktopButtons button:nth-child(2):active {
+	background-color: #0066C8;
+	border-bottom: 0.125rem solid #004280;
+	transition: 0.2s;
+}
+
+#desktopButtons button:nth-child(3) {
+	background-color: #D40F7D;
+	border-bottom: 0.375rem solid #940A57;
+}
+
+#desktopButtons button:nth-child(3):hover {
+	background-color: #E61088;
+	border-bottom: 0.25rem solid #940A57;
+	transition: 0.2s;
+}
+
+#desktopButtons button:nth-child(3):active {
+	background-color: #D40F7D;
+	border-bottom: 0.125rem solid #940A57;
+	transition: 0.2s;
+}
+
+#desktopButtons button:nth-child(4) {
+	background-color: #702082;
+	border-bottom: 0.375rem solid #4E165B;
+}
+
+#desktopButtons button:nth-child(4):hover {
+	background-color: #7A238D;
+	border-bottom: 0.25rem solid #4E165B;
+	transition: 0.2s;
+}
+
+#desktopButtons button:nth-child(4):active {
+	background-color: #702082;
+	border-bottom: 0.125rem solid #4E165B;
+	transition: 0.2s;
+}
+
+/* THE END */
+
+@media screen and (min-width: 30rem /*768px*/) {
+	main div:first-child section:nth-child(2) {
+		display: flex;
+		justify-content: center;
+	}
+	
+	main div section:nth-child(2) div {
+		padding: 1.25rem 0.25rem;
+		/* width: 128rem; */
+	}
+	
+	main div section:nth-child(2) div div {
+		/* margin: 1.25rem 1.25rem; */
+		/* width: 100%; */
+	}
+}
+
+#desktopButtons {
+	display: none;
+}
+
+@media screen and (min-width: 50em /*768px*/) {
+	main div:first-child section:nth-child(2){
+		display: none;
+	}
+	main div section:nth-child(2) div:nth-child(1) button:last-child {
+		color: red;
+	}
+	main div section:nth-child(2) div:nth-child(2) button:last-child {
+		color: red;
+	}
+	main div section:nth-child(2) div {
+		display: none;
+	}
+	#desktopButtons {
+		display: block;
+		background-color: white;
+	}
+}
+
+/* ---- MOBILE BOVENKANT ---- */
+
+main div:first-child section:first-child {
+	background-color: #005EB8;
+	color: #fff;
+}
+
+main div:first-child section:first-child div {
+	margin: 0 auto;
+	display: flex;
+	justify-content: space-between;
+}
+
+main div:first-child section:nth-child(3) div {
+	margin: 0 auto;
+	display: flex;
+	justify-content: space-between;
+}
+
+main div:first-child section:nth-child(4) div {
+	margin: 0 auto;
+	display: flex;
+	justify-content: space-between;
+}
+
+main div:first-child section:nth-child(5) div {
+	margin: 0 auto;
+	display: flex;
+	justify-content: space-between;
+}
+
+main div:first-child section:nth-child(6) div {
+	margin: 0 auto;
+	display: flex;
+	justify-content: space-between;
+}
+
+main div:first-child section:first-child div > div:nth-child(2) {
+
+}
+
+main div:first-child section:first-child div div:first-child {
+	flex-direction: column;
+}
+
+main div:first-child section:nth-child(3) div div {
+	flex-direction: column;
+}
+
+main div:first-child section:nth-child(4) div div {
+	flex-direction: column;
+}
+
+main div:first-child section:nth-child(5) div div {
+	flex-direction: column;
+}
+
+main div:first-child section:nth-child(6) div div {
+	flex-direction: column;
+}
+
+section {
+	padding: 1rem 0.3rem;
+}
+
+a {
+	color: white;
+}
+
+main div:first-child section:first-child div:nth-child(2) {
+	height: 100%;
+}
+
+main div:first-child section:first-child div > div:nth-child(2) img {
+	margin: 0 auto;
+}
+
+main div:first-child section:first-child div:nth-child(2) {
+/*	width: 40%;
+	padding-left: 1.25rem;*/
+}
+
+/* ------------------------- */
+/* ---- DESKTOP BOVENKANT ---- */
+
+@media screen and (min-width: 48em /*768px*/) {
+	main div:first-child section:first-child {
+		background-color: #005EB8;
+		color: #fff;
+	}
+
+	section:nth-child(4) {
+		padding: 3rem 0.3rem;
+	}
+
+	section:nth-child(5) {
+		padding: 3rem 0.3rem;
+	}
+
+	section:nth-child(6) {
+		padding: 3rem 0.3rem;
+	}
+
+	section:nth-child(1) div,
+	section:nth-child(3) div,
+	section:nth-child(4) div:nth-child(1),
+	section:nth-child(5) div:nth-child(1),
+	section:nth-child(6) div:nth-child(1),
+	footer  {
+		margin: 0 auto;
+		display: flex;
+		justify-content: center;
+		width: 73rem;
+	}
+
+	main div:first-child section:first-child div {
+		margin: 0 auto;
+		display: flex;
+		justify-content: center;
+		width: 73rem;
+	}
+
+	main div:first-child section:first-child div div:first-child {
+		/*margin: 0 auto;
+		padding-right: 1.25rem;
+		width: 60%;*/
+		flex-direction: column;
+		flex-grow: 1;
+	}
+
+	main div:first-child section:first-child div > div:nth-child(2) {
+		flex-grow: 2;
+	}
+
+	main div:first-child section:first-child div > div:nth-child(2) img {
+		margin-right: 0;
+	}	
+}
+
+section:nth-child(6) img {
+	width: 100%;
+}
+
+main div:first-child section:nth-child(3) {
+	background-color: #F4F4F4;
+}
+
+main div:first-child section:nth-child(3) h1 {
+}
+
+main div:first-child section:nth-child(3) h1 span {
+	color: #005EB8;
+}
+
+main div:first-child section:nth-child(3) button {
+	background-color: #005EB8;
+	color: #fff;
+	width: 12em;
+	padding: 1.25rem;
+	margin: 1.25rem 0.625rem;
+	border-radius: 0.3em;
+	display: flex;
+	border: none;
+	border-bottom: 0.375rem solid #004280;
+	font-family: tele2;
+}
+
+main div:first-child section:nth-child(4) button {
+	background-color: red;
+	color: #fff;
+	width: 12em;
+	padding: 1.25rem;
+	margin: 1.25rem 0.625rem;
+	border-radius: 0.3em;
+	display: flex;
+	border: none;
+	border-bottom: 0.375rem solid #006F9C;
+	font-family: tele2;
+}
+
+div img:first-child {
+	display: none;
+}
+
+@media screen and (min-width: 48em /*768px*/) {
+	div img:first-child	 {
+		display: block;
+	}
+	div img:nth-child(2)	 {
+		display: none;
+	}
+}
+
+main div section:nth-child(4) {
+	background-color: #FEDD00;
+}
+
+main div section:nth-child(4) h1 span {
+	color: #005EB8;
+}
+
+main div section:nth-child(4) h2 {
+	font-family: tele2;
+}
+
+main div:first-child section:nth-child(4) button {
+	background-color: #005EB8;
+	color: #fff;
+	width: 12em;
+	padding: 1.25rem;
+	margin: 1.25rem 0.625rem;
+	border-radius: 0.3em;
+	display: flex;
+	border: none;
+	border-bottom: 0.375rem solid #004280;
+	font-family: tele2;
+}
+
+main div:first-child section:nth-child(4) button:hover {
+	background-color: #0066C8;
+	border-bottom: 0.3125rem solid #004280;
+	transition: 0.2s;
+}
+
+main div:first-child section:nth-child(4) button:active {
+	background-color: #005EB8;
+	border-bottom: 0.125rem solid #004280;
+	transition: 0.2s;
+}
+
+main div section:nth-child(5) {
+	background-color: #005EB8;
+}
+
+main div section:nth-child(5) {
+	color: white;
+}
+
+main div section:nth-child(5) h1 span {
+	color: #FEDD00;
+}
+
+main div:first-child section:nth-child(5) button {
+	background-color: #FEDD00;
+	color: #000;
+	width: 12em;
+	padding: 1.25rem;
+	margin: 1.25rem 0.625rem;
+	border-radius: 0.3em;
+	display: flex;
+	border: none;
+	border-bottom: 0.375rem solid #b19a00;
+	font-family: tele2;
+}
+
+#kleurFooter {
+	background-color: #1C1C1C;
+}
+
+footer {
+	background-color: #1C1C1C;
+	color: white;
+	display: flex;
+	flex-direction: column;
+	padding: 1.25rem 0 1.25rem 0;
+	font-family: tele2;
+}
+
+footer div:first-child {
+	border: 0.0625rem solid gray;
+	border-bottom: none;
+	padding: 0.625rem 0.3125rem;
+	margin: 0 0.625rem;
+}
+
+footer div {
+	border: 0.0625rem solid gray;
+	border-bottom: none;
+	padding: 0.625rem 0.3125rem;
+	margin: 0 0.625rem;
+}
+
+footer div:nth-child(4) {
+	border: 0.0625rem solid gray;
+	padding: 0.625rem 0.3125rem;
+	margin: 0 0.625rem;
+}
+
+footer div:nth-child(5) {
+	border: 0.0625rem solid gray;
+	padding: 0.625rem 0.3125rem;
+	margin: 0.9375rem 0.625rem;
+}
+
+footer:last-child {
+	padding: 1.375em 0;
+}
+
+footer span {
+	color: #999;
+	margin: 0 0.625rem;
+	text-align: center;
+}
+
+footer img {
+	text-align: center;
+	width: 5rem;
+	margin: 0 auto;
+}
+
+/* ---- DETAIL SCHERM ---- */
+/*#detailMain #lenen {
+	display: flex;
+	justify-content: center;
+	padding: 10px 0;
+	border-bottom: 1px solid #ccc;
+}*/
+
+#detailMain button, input:nth-child(3) {
+	border: none;
+	width: 12em;
+	padding: 1.25rem;
+	margin: 1.25rem 0.625rem;
+	border-radius: 0.3em;
+	display: flex;
+	font-family: tele2;
+}
+/* --- TELE2 VRIENDENVOORDEEL --- */
+#detailMain section:nth-child(1) {
+	background-color: #fedd00;
+	color: black;
+}
+
+#detailMain section:nth-child(1) div {
+	display: block;
+}
+
+#detailMain section:nth-child(1) img {
+	width: 100%;
+}
+
+#detailMain section:nth-child(1) h1 {
+	font-size: 2.625em;
+	line-height: .78571429;
+}
+
+#detailMain section:nth-child(1) p {
+	font-size: 1.25rem;
+	line-height: 1.1;
+	font-family: 'tele2';
+}
+
+#detailMain section:nth-child(1) span {
+	color: #005eb8;
+}
+
+#detailMain section:nth-child(1) button {
+	background-color: #005eb8;
+	color: #fff;
+	border-bottom: 0.375rem solid #004280;
+	font-size: 1.125rem;
+}
+
+#detailMain section:nth-child(1) button:hover {
+	background-color: #005EB8;
+	border-bottom: 0.25rem solid #004280;
+	transition: 0.2s;
+}
+
+#detailMain section:nth-child(1) button:active {
+	background-color: #0066C8;
+	border-bottom: 0.125rem solid #004280;
+	transition: 0.2s;
+}
+
+@media screen and (min-width: 48em /*768px*/) {
+	#detailMain section:nth-child(2) {
+		margin: 0 auto;
+		display: flex;
+		justify-content: space-between;
+	}
+
+	#detailMain section:nth-child(1) div {
+		display: flex;
+	}
+
+	#detailMain section:nth-child(1) img {
+		width: 20rem;
+	}
+
+}
+/* ---------------------- */
+
+/* --- 20 voor jou 20 voor de andere --- */
+#detailMain section:nth-child(2) {
+	background-color: #005EB8;
+	text-align: center;
+	display: block;
+	color: white;
+}
+
+#detailMain section:nth-child(2) h1 {
+	color: #fff;
+	font-size: 2.625em;
+	line-height: .78571429;
+}
+
+#detailMain section:nth-child(2) span {
+	color: #fedd00;
+}
+
+#detailMain section:nth-child(2) h2 {
+	font-size: 1.25rem;
+	font-family: 'tele2';
+	line-height: 1.1;
+}
+
+#detailMain section:nth-child(2) h3 {
+	text-align: left;
+	line-height: 1.375;
+	font-family: 'tele2regular';
+	font-weight: 300;
+	font-size: 1rem;
+}
+
+#detailMain section:nth-child(2) button {
+	margin: 0 auto;
+	background-color: #FEDD00;
+	cursor: pointer;
+	font-family: 'tele2';
+	font-size: 1.125rem;
+	line-height: 1;
+	color: #000;
+	border-bottom: 0.375rem solid #b19a00;
+	width: 9rem;
+	text-align: center;
+}
+
+#detailMain section:nth-child(2) button:hover {
+	background-color: #FFF000;
+	border-bottom: 0.3125rem solid #B19A00;
+	transition: 0.2s;
+}
+
+#detailMain section:nth-child(2) button:active {
+	background-color: #FEDD00;
+	border-bottom: 0.125rem solid #B19A00;
+	transition: 0.2s;
+}
+
+@media screen and (min-width: 48em /*768px*/) {
+	#detailMain section:nth-child(2) {
+		display: block;
+	}
+	#detailMain section:nth-child(2) div {
+		display: block;
+		margin: 0 auto;
+		width: 73rem;
+	}
+}
+/* ---------------------- */
+
+/* --- HOE WERKT HET? --- */
+#detailMain section:nth-child(3) {
+	background-color: #fff;
+	text-align: center;
+	display: flex;
+	flex-direction: column;
+}
+
+#detailMain section:nth-child(3) div {
+	display: flex;
+	flex-direction: column;
+}
+
+#detailMain section:nth-child(3) h1 {
+	font-size: 1.375em;
+	line-height: 1;
+	font-family: 'tele2';
+}
+
+#detailMain section:nth-child(3) p {
+	font-size: .875rem;
+	line-height: 1.375rem;
+	font-family: 'tele2sans';
+	text-align: center;
+}
+
+#detailMain section:nth-child(3) div h1 {
+	font-size: 1.25rem;
+	line-height: 1.1;
+	font-family: 'tele2';
+	text-align: center;
+	margin: 0 0 1.375rem;
+}
+
+#detailMain section:nth-child(3) div p {
+	font-size: 1rem;
+	line-height: 1.375;
+	font-family: 'tele2regular';
+	font-weight: 400;
+	margin: 0 0 1.375rem;
+}
+
+#detailMain section:nth-child(3) img {
+	display: block;
+	max-width: 100%;
+	height: auto;
+	margin-left: auto;
+	margin-right: auto;
+	margin-bottom: 1.375rem;
+}
+/* ---------------------- */
+
+/* -------AANMELDEN-------*/
+#detailMain section:nth-child(4) h1 {
+	font-size: 2.625em;
+	line-height: .78571429;
+	font-family: 'tele2heavy';
+}
+
+#detailMain section:nth-child(4) p {
+	font-size: 1.25rem;
+	line-height: 1.1;
+	font-family: 'tele2';
+}
+
+#detailMain section:nth-child(4) input {
+	padding: 10px;
+	font-size: 1em;
+	background-color: #F5F5F5;
+	border: 1px solid #F5F5F5;
+	width: 100%;
+	margin: auto;
+	margin-top: 10px;
+}
+
+#detailMain section:nth-child(4) input:nth-child(3) {
+	background-color: #005eb8;
+	color: #fff;
+	border: none;
+	border-bottom: 0.375rem solid #004280;
+}
+
+#detailMain section:nth-child(4) input:nth-child(3) {
+	background-color: #005EB8;
+	border-bottom: 0.25rem solid #004280;
+	transition: 0.2s;
+}
+
+#detailMain section:nth-child(4) input:nth-child(3) {
+	background-color: #0066C8;
+	border-bottom: 0.125rem solid #004280;
+	transition: 0.2s;
+}
+
+@media screen and (min-width: 48em /*768px*/) {
+	#detailMain section:nth-child(4) div {
+		display: flex;
+		flex-direction: row;
+		margin: 0 auto;
+		width: 73rem;
+	}
+	#detailMain section:nth-child(4) div:nth-child(2) {
+		flex-direction: column;
+	}
+}
+/* ---------------------- */
+/* -------VRAGEN--------- */
+
+#detailMain section:nth-child(5) {
+	background-color: #fff;
+	color: #000;
+}
+
+#detailMain section:nth-child(5) h1 {
+	font-size: 1.375em;
+	line-height: 1;
+	font-family: 'tele2';
+}
+
+#detailMain section:nth-child(5) div h2 {
+	font-size: 1em;
+	line-height: 1.5em;
+	font-family: 'tele2regular';
+	font-weight: 400;
+}
+
+#detailMain section:nth-child(5) div {
+	font-size: 1em;
+	transition: all .2s ease-in-out;
+	padding: 1.1em 2.0625em 1.1em .9375em;
+	cursor: pointer;
+	line-height: 1.5em;
+	border-bottom: 1px solid #ccc;
+}
+
+@media screen and (min-width: 48em /*768px*/) {
+	#detailMain section:nth-child(5) {
+		margin: 0 auto;
+		width: 73rem;
+	}
+}
+/* ---------------------- */
